@@ -6,9 +6,6 @@ __pycache__/
 .git/
 .gitignore
 *.md
-static/
-templates/
-data/
 .vscode/
 .idea/
 *.egg-info/
