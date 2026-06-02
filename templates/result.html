@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet"
+      href="{{ url_for('static',
+      filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Shortest Route</h2>
+
+{% for node in path %}
+
+<p>{{ node }}</p>
+
+{% endfor %}
+
+<h3>
+Distance:
+{{ distance }} meters
+</h3>
+
+<a href="/">Back</a>
+
+</div>
+
+</body>
+</html>

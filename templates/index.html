@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Navigation</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Campus Navigation System</h1>
+
+<form action="/find_route" method="POST">
+
+<label>Source</label>
+
+<select name="start">
+    <option>A101</option>
+    <option>A102</option>
+    <option>Lab1</option>
+    <option>Library</option>
+</select>
+
+<label>Destination</label>
+
+<select name="destination">
+    <option>A101</option>
+    <option>A102</option>
+    <option>Lab1</option>
+    <option>Library</option>
+</select>
+
+<button type="submit">
+Find Route
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "A101": {
+    "Corridor1": 5
+  },
+
+  "Corridor1": {
+    "A101": 5,
+    "A102": 3,
+    "Lab1": 7
+  },
+
+  "A102": {
+    "Corridor1": 3
+  },
+
+  "Lab1": {
+    "Corridor1": 7,
+    "Library": 4
+  },
+
+  "Library": {
+    "Lab1": 4
+  }
+}
