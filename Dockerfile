@@ -7,6 +7,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
+ENV PORT=8000
 
-CMD exec gunicorn --bind 0.0.0.0:8000 --workers 4 app:app
+EXPOSE ${PORT}
+
+CMD exec gunicorn --bind 0.0.0.0:${PORT} --workers 4 app:app
